@@ -1,0 +1,6 @@
+﻿tidy3dclient.viz.relative\_eps
+==============================
+
+.. currentmodule:: tidy3dclient.viz
+
+.. autofunction:: relative_eps

@@ -1,0 +1,6 @@
+﻿tidy3dclient.viz.tprobe\_2D
+===========================
+
+.. currentmodule:: tidy3dclient.viz
+
+.. autofunction:: tprobe_2D

@@ -1,0 +1,13 @@
+Installation
+============
+
+The Tidy3D client can be installed from PyPI:
+
+.. code-block:: python
+
+    pip install tidy3dclient
+
+Once constructed, simulations can be run through the webapi that is included with the client.
+The first time you use the webapi, you will be prompted to sign in.
+If you don't yet have an account to use the Tidy3D solver, you can make or request one 
+`here <https://master.d3lzzjs5ux4k4r.amplifyapp.com/>`_.

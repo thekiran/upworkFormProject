@@ -1,0 +1,6 @@
+﻿tidy3dclient.Simulation.load\_results
+=====================================
+
+.. currentmodule:: tidy3dclient
+
+.. automethod:: Simulation.load_results

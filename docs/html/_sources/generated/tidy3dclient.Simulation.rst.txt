@@ -1,0 +1,38 @@
+﻿tidy3dclient.Simulation
+=======================
+
+.. currentmodule:: tidy3dclient
+
+.. autoclass:: Simulation
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~Simulation.__init__
+      ~Simulation.add
+      ~Simulation.export
+      ~Simulation.export_json
+      ~Simulation.import_json
+      ~Simulation.load_results
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~Simulation.fprobes
+      ~Simulation.mat_inds
+      ~Simulation.materials
+      ~Simulation.sources
+      ~Simulation.structures
+      ~Simulation.tprobes
+   
+   

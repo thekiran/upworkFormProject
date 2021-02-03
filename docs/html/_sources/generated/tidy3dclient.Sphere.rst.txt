@@ -1,0 +1,22 @@
+﻿tidy3dclient.Sphere
+===================
+
+.. currentmodule:: tidy3dclient
+
+.. autoclass:: Sphere
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~Sphere.__init__
+   
+   
+
+   
+   
+   

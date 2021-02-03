@@ -1,0 +1,85 @@
+.. currentmodule:: tidy3dclient
+
+*************
+API Reference
+*************
+
+Tidy3D API
+==========
+
+Simulation
+----------
+
+.. autosummary::
+   :toctree: generated/
+
+   Simulation
+   Simulation.load_results
+   Simulation.export
+   Simulation.export_json
+   Simulation.import_json
+
+Materials
+---------
+
+.. autosummary::
+   :toctree: generated/
+
+   Medium
+   Medium.from_nk
+   PEC
+   PMC
+
+Structures
+----------
+
+.. autosummary::
+   :toctree: generated/
+
+   Box
+   Sphere
+   Cylinder
+   PolySlab
+   GdsSlab
+
+Sources
+-------
+
+.. autosummary::
+   :toctree: generated/
+
+   GaussianSource
+   PlaneSource
+
+Probes
+------
+
+.. autosummary::
+   :toctree: generated/
+
+   TimeProbe
+   FreqProbe
+
+Plotting tools
+--------------
+
+.. autosummary::
+   :toctree: generated/
+
+   viz.relative_eps
+   viz.source_time
+   viz.fprobe_2D
+   viz.tprobe_2D
+
+Task submission
+---------------
+
+.. autosummary::
+   :toctree: generated/
+   
+   web.newProject
+   web.getProject
+   web.deleteProject
+   web.monitorProject
+   web.listProjects
+   web.downloadResults

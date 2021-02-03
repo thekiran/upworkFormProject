@@ -1,0 +1,6 @@
+﻿tidy3dclient.Medium.from\_nk
+============================
+
+.. currentmodule:: tidy3dclient
+
+.. automethod:: Medium.from_nk

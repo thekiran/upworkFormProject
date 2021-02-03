@@ -1,0 +1,85 @@
+Frequently Asked Questions
+==========================
+
+
+What are the units used in the simulation?
+------------------------------------------
+
+We assume the following physical units:
+
+  - Length: micron (μm, :math:`10^{-6}` meters)
+  - Time: Second (s)
+  - Frequency: Hertz (Hz)
+  - Electric conductivity: Siemens per micron (S/μm)
+
+Thus the user should thus be careful for example to use the speed of light 
+in μm/s when converting between wavelength and frequency.
+
+Currently, only linear evolution is supported, and so the output fields have an 
+arbitrary normalization proportional to the amplitude of the current sources, 
+which is also in arbitrary units. In the API Reference, the units are explicitly 
+stated where applicable. 
+
+
+How do I run a simulation and access the results?
+-------------------------------------------------
+
+Submitting and monitoring jobs, and donwloading the results, is all done 
+through our `web API <api.html#task-submission>`_. After a successful run, 
+all data for all probes can be downloaded in a single file 
+``probe_data.hdf5`` using :meth:`tidy3dclient.web.downloadResultsFile`, and the 
+raw data can be loaded and analyzed directly e.g. using ``h5py``. The data 
+for each probe is stored in a separate group, with the following datasets:
+
+- ``E``: E-field, if requested.
+- ``H``: H-field, if requested. 
+- ``xmesh``: Mesh along x over which the fields were stored.
+- ``xmesh``: Mesh along y over which the fields were stored.
+- ``xmesh``: Mesh along z over which the fields were stored.
+- (for a :class:`tidy3dclient.TimeProbe`) ``tmesh``: Mesh in time over which the fields were stored.
+- (for a :class:`tidy3dclient.FreqProbe`) ``freqs``: List of frequencies over which the DFT was computed.
+
+Each of ``E`` and ``H`` that was requested has the shape ``(3, Nx, Ny, Nz, Np)``, 
+where ``Np`` is either the number of time steps or the number of frequencies. Note 
+that the fields are interpolated to the center of the Yee grid cell.
+
+The data file can also be loaded into the corresponding :class:`tidy3dclient.Simulation` 
+object that was used for the run using :meth:`tidy3dclient.Simulation.load_results`. The Simulation 
+object has as attributes a list of time and a list of frequency probes, ``Simulation.tprobes`` and 
+``Simulation.fprobes``, respectively, and each Probe in those lists has the list of datasets attributes 
+datasets above as attributes. Loading the results in this way also allows you to use our in-built 
+`visualization <api.html#plotting-tools>`_ functions.
+
+How many layers of PML should I add in a given simulation?
+----------------------------------------------------------
+
+Tidy3D uses a complex frequency-shifted formulation of the perfectly-matched layers (CPML), 
+for which it is more natural to define the thickness as number of layers rather than as 
+physical size. In many simulations, using e.g. 15 layers in a given direction will be sufficient. 
+If the fields in a simulation diverge, the first thing to try is increasing 
+the number of PML layers, followed by decreasing the Courant stability factor. Finally, 
+some simulations might work better with a setting of the underlying CPML parameters that is 
+different from the default. In a future release, we will also allow the (experienced) user to 
+set these parameters.
+
+Are dispersive and lossy materials supported?
+---------------------------------------------
+
+Currently, dispersive material models are not supported, but this is high on our priority list. 
+However, for a sufficiently narrow frequency of interest, lossy (i.e. conductive) materials 
+*can* be included, either directly through a value for the real part of the relative permittivity 
+:math:`\mathrm{Re}(\epsilon_r)` and electric conductivity :math:`\sigma`, or through a 
+real and imaginary part of the refractive index at a given frequency, :math:`n(\omega) = n + ik`. 
+In the case of (almost) lossless dielectrics, the dispersion could be negligible in a broad 
+frequency window, but generally, it is importat to keep in mind that such a 
+formulation of the losses is best suited for single-frequency results. The relationship 
+between the two equivalent models is 
+
+.. math::
+
+	&\mathrm{Re}(\epsilon_r) = n^2 - k^2 
+
+	&\mathrm{Im}(\epsilon_r) = 2nk
+
+	&\sigma = \omega \epsilon_0 \mathrm{Im}(\epsilon_r)
+

@@ -1,0 +1,6 @@
+﻿tidy3dclient.viz.source\_time
+=============================
+
+.. currentmodule:: tidy3dclient.viz
+
+.. autofunction:: source_time

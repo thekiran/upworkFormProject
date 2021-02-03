@@ -1,0 +1,228 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 10 version
+*/
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #f1f7fa;
+}
+
+h1 {
+  color: #202020;
+  font-size: 36px;
+  text-align: center;
+  margin: auto;
+  max-width: 304px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #c43959;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: -0.16px;
+  line-height: 2;
+  max-width: 250px;
+  margin: auto;
+  text-transform: initial;
+  font-family: 'Andale Mono', sans-serif;
+}
+
+li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 auto 39px auto;
+  width: 320px;
+  padding: 0 20px;
+}
+
+li img {
+  width: 96px;
+  height: 96px;
+  background: #eaf2f8;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+li p {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.divider {
+  height: 0;
+}
+
+.background-top {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(70%, #f1f7fa),
+    to(white)
+  );
+  background: -o-linear-gradient(#f1f7fa 70%, white);
+  background: linear-gradient(#f1f7fa 70%, white);
+  width: 100%;
+}
+
+.team-container {
+  padding-bottom: 50px;
+  background-color: white;
+  background-image: url('../img/new-teams/teams-backgorund-bottom.png');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    max-width: 100%;
+    padding: 0 50px;
+    position: relative;
+  }
+
+  h2 {
+    max-width: 600px;
+    padding: 0 50px;
+    position: relative;
+  }
+
+  .background-top {
+    margin-top: -80px;
+  }
+
+  li img {
+    width: 208px;
+    height: 208px;
+    margin-right: 24px;
+  }
+
+  li {
+    width: 500px;
+    margin-bottom: 70px;
+  }
+
+  li p {
+    font-size: 18px;
+  }
+
+  li h4 {
+    font-size: 32px;
+  }
+
+  ul {
+    position: relative;
+    margin-top: -200px;
+  }
+
+  .team-container {
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    max-width: 650px;
+    padding: 0;
+    margin-top: 120px;
+  }
+
+  body {
+    padding-bottom: 78px;
+  }
+
+  .team-container ul {
+    position: relative;
+    margin-top: -400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  h1 {
+    font-size: 60px;
+    max-width: 800px;
+    line-height: 1;
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 800px;
+  }
+
+  li {
+    margin: initial;
+    margin-bottom: 80px;
+    width: 540px;
+  }
+
+  li:last-child {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+  }
+
+  ul > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 100%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .background-top {
+    margin-top: -300px;
+  }
+
+  .team-container ul {
+    margin-top: -600px;
+    max-width: 1131px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* macbook pro */
+@media screen and (min-width: 1536px) {
+  .background-top {
+    margin-top: -410px;
+  }
+
+  .team-container ul {
+    margin-top: -800px;
+  }
+}

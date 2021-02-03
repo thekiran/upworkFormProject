@@ -1,0 +1,6 @@
+﻿tidy3dclient.web.monitorProject
+===============================
+
+.. currentmodule:: tidy3dclient.web
+
+.. autofunction:: monitorProject

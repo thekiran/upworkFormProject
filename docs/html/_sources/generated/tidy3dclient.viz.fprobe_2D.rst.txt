@@ -1,0 +1,6 @@
+﻿tidy3dclient.viz.fprobe\_2D
+===========================
+
+.. currentmodule:: tidy3dclient.viz
+
+.. autofunction:: fprobe_2D

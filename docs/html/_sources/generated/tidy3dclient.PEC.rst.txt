@@ -1,0 +1,6 @@
+﻿tidy3dclient.PEC
+================
+
+.. currentmodule:: tidy3dclient
+
+.. autodata:: PEC

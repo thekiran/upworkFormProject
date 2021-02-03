@@ -1,0 +1,322 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Frequently Asked Questions &mdash; Tidy3d  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="_static/logo.svg"/>
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Examples" href="examples.html" />
+    <link rel="prev" title="Installation" href="installation.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Tidy3d
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">User Guide</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Frequently Asked Questions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#what-are-the-units-used-in-the-simulation">What are the units used in the simulation?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-do-i-run-a-simulation-and-access-the-results">How do I run a simulation and access the results?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-many-layers-of-pml-should-i-add-in-a-given-simulation">How many layers of PML should I add in a given simulation?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#are-dispersive-and-lossy-materials-supported">Are dispersive and lossy materials supported?</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API Reference</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Tidy3d</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Frequently Asked Questions</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/faq.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="frequently-asked-questions">
+<h1>Frequently Asked Questions<a class="headerlink" href="#frequently-asked-questions" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="what-are-the-units-used-in-the-simulation">
+<h2>What are the units used in the simulation?<a class="headerlink" href="#what-are-the-units-used-in-the-simulation" title="Permalink to this headline">¶</a></h2>
+<p>We assume the following physical units:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Length: micron (μm, <span class="math notranslate nohighlight">\(10^{-6}\)</span> meters)</p></li>
+<li><p>Time: Second (s)</p></li>
+<li><p>Frequency: Hertz (Hz)</p></li>
+<li><p>Electric conductivity: Siemens per micron (S/μm)</p></li>
+</ul>
+</div></blockquote>
+<p>Thus the user should thus be careful for example to use the speed of light
+in μm/s when converting between wavelength and frequency.</p>
+<p>Currently, only linear evolution is supported, and so the output fields have an
+arbitrary normalization proportional to the amplitude of the current sources,
+which is also in arbitrary units. In the API Reference, the units are explicitly
+stated where applicable.</p>
+</div>
+<div class="section" id="how-do-i-run-a-simulation-and-access-the-results">
+<h2>How do I run a simulation and access the results?<a class="headerlink" href="#how-do-i-run-a-simulation-and-access-the-results" title="Permalink to this headline">¶</a></h2>
+<p>Submitting and monitoring jobs, and donwloading the results, is all done
+through our <a class="reference external" href="api.html#task-submission">web API</a>. After a successful run,
+all data for all probes can be downloaded in a single file
+<code class="docutils literal notranslate"><span class="pre">probe_data.hdf5</span></code> using <code class="xref py py-meth docutils literal notranslate"><span class="pre">tidy3dclient.web.downloadResultsFile()</span></code>, and the
+raw data can be loaded and analyzed directly e.g. using <code class="docutils literal notranslate"><span class="pre">h5py</span></code>. The data
+for each probe is stored in a separate group, with the following datasets:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">E</span></code>: E-field, if requested.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">H</span></code>: H-field, if requested.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">xmesh</span></code>: Mesh along x over which the fields were stored.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">xmesh</span></code>: Mesh along y over which the fields were stored.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">xmesh</span></code>: Mesh along z over which the fields were stored.</p></li>
+<li><p>(for a <a class="reference internal" href="generated/tidy3dclient.TimeProbe.html#tidy3dclient.TimeProbe" title="tidy3dclient.TimeProbe"><code class="xref py py-class docutils literal notranslate"><span class="pre">tidy3dclient.TimeProbe</span></code></a>) <code class="docutils literal notranslate"><span class="pre">tmesh</span></code>: Mesh in time over which the fields were stored.</p></li>
+<li><p>(for a <a class="reference internal" href="generated/tidy3dclient.FreqProbe.html#tidy3dclient.FreqProbe" title="tidy3dclient.FreqProbe"><code class="xref py py-class docutils literal notranslate"><span class="pre">tidy3dclient.FreqProbe</span></code></a>) <code class="docutils literal notranslate"><span class="pre">freqs</span></code>: List of frequencies over which the DFT was computed.</p></li>
+</ul>
+<p>Each of <code class="docutils literal notranslate"><span class="pre">E</span></code> and <code class="docutils literal notranslate"><span class="pre">H</span></code> that was requested has the shape <code class="docutils literal notranslate"><span class="pre">(3,</span> <span class="pre">Nx,</span> <span class="pre">Ny,</span> <span class="pre">Nz,</span> <span class="pre">Np)</span></code>,
+where <code class="docutils literal notranslate"><span class="pre">Np</span></code> is either the number of time steps or the number of frequencies. Note
+that the fields are interpolated to the center of the Yee grid cell.</p>
+<p>The data file can also be loaded into the corresponding <a class="reference internal" href="generated/tidy3dclient.Simulation.html#tidy3dclient.Simulation" title="tidy3dclient.Simulation"><code class="xref py py-class docutils literal notranslate"><span class="pre">tidy3dclient.Simulation</span></code></a>
+object that was used for the run using <a class="reference internal" href="generated/tidy3dclient.Simulation.load_results.html#tidy3dclient.Simulation.load_results" title="tidy3dclient.Simulation.load_results"><code class="xref py py-meth docutils literal notranslate"><span class="pre">tidy3dclient.Simulation.load_results()</span></code></a>. The Simulation
+object has as attributes a list of time and a list of frequency probes, <code class="docutils literal notranslate"><span class="pre">Simulation.tprobes</span></code> and
+<code class="docutils literal notranslate"><span class="pre">Simulation.fprobes</span></code>, respectively, and each Probe in those lists has the list of datasets attributes
+datasets above as attributes. Loading the results in this way also allows you to use our in-built
+<a class="reference external" href="api.html#plotting-tools">visualization</a> functions.</p>
+</div>
+<div class="section" id="how-many-layers-of-pml-should-i-add-in-a-given-simulation">
+<h2>How many layers of PML should I add in a given simulation?<a class="headerlink" href="#how-many-layers-of-pml-should-i-add-in-a-given-simulation" title="Permalink to this headline">¶</a></h2>
+<p>Tidy3D uses a complex frequency-shifted formulation of the perfectly-matched layers (CPML),
+for which it is more natural to define the thickness as number of layers rather than as
+physical size. In many simulations, using e.g. 15 layers in a given direction will be sufficient.
+If the fields in a simulation diverge, the first thing to try is increasing
+the number of PML layers, followed by decreasing the Courant stability factor. Finally,
+some simulations might work better with a setting of the underlying CPML parameters that is
+different from the default. In a future release, we will also allow the (experienced) user to
+set these parameters.</p>
+</div>
+<div class="section" id="are-dispersive-and-lossy-materials-supported">
+<h2>Are dispersive and lossy materials supported?<a class="headerlink" href="#are-dispersive-and-lossy-materials-supported" title="Permalink to this headline">¶</a></h2>
+<p>Currently, dispersive material models are not supported, but this is high on our priority list.
+However, for a sufficiently narrow frequency of interest, lossy (i.e. conductive) materials
+<em>can</em> be included, either directly through a value for the real part of the relative permittivity
+<span class="math notranslate nohighlight">\(\mathrm{Re}(\epsilon_r)\)</span> and electric conductivity <span class="math notranslate nohighlight">\(\sigma\)</span>, or through a
+real and imaginary part of the refractive index at a given frequency, <span class="math notranslate nohighlight">\(n(\omega) = n + ik\)</span>.
+In the case of (almost) lossless dielectrics, the dispersion could be negligible in a broad
+frequency window, but generally, it is importat to keep in mind that such a
+formulation of the losses is best suited for single-frequency results. The relationship
+between the two equivalent models is</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}&amp;\mathrm{Re}(\epsilon_r) = n^2 - k^2\\&amp;\mathrm{Im}(\epsilon_r) = 2nk\\&amp;\sigma = \omega \epsilon_0 \mathrm{Im}(\epsilon_r)\end{aligned}\end{align} \]</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="examples.html" class="btn btn-neutral float-right" title="Examples" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="installation.html" class="btn btn-neutral float-left" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright Flexcompute 2020
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

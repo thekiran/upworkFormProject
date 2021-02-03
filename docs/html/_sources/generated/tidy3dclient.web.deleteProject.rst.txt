@@ -1,0 +1,6 @@
+﻿tidy3dclient.web.deleteProject
+==============================
+
+.. currentmodule:: tidy3dclient.web
+
+.. autofunction:: deleteProject

@@ -1,0 +1,22 @@
+﻿tidy3dclient.GaussianSource
+===========================
+
+.. currentmodule:: tidy3dclient
+
+.. autoclass:: GaussianSource
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~GaussianSource.__init__
+   
+   
+
+   
+   
+   

@@ -1,0 +1,6 @@
+﻿tidy3dclient.web.downloadResults
+================================
+
+.. currentmodule:: tidy3dclient.web
+
+.. autofunction:: downloadResults

@@ -1,0 +1,22 @@
+﻿tidy3dclient.PlaneSource
+========================
+
+.. currentmodule:: tidy3dclient
+
+.. autoclass:: PlaneSource
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~PlaneSource.__init__
+   
+   
+
+   
+   
+   

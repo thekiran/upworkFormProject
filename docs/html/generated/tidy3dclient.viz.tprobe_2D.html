@@ -1,0 +1,300 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>tidy3dclient.viz.tprobe_2D &mdash; Tidy3d  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/logo.svg"/>
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="tidy3dclient.web.newProject" href="tidy3dclient.web.newProject.html" />
+    <link rel="prev" title="tidy3dclient.viz.fprobe_2D" href="tidy3dclient.viz.fprobe_2D.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Tidy3d
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">User Guide</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api.html">API Reference</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../api.html#tidy3d-api">Tidy3D API</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../api.html#simulation">Simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api.html#materials">Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api.html#structures">Structures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api.html#sources">Sources</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api.html#probes">Probes</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../api.html#plotting-tools">Plotting tools</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="tidy3dclient.viz.relative_eps.html">tidy3dclient.viz.relative_eps</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tidy3dclient.viz.source_time.html">tidy3dclient.viz.source_time</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tidy3dclient.viz.fprobe_2D.html">tidy3dclient.viz.fprobe_2D</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">tidy3dclient.viz.tprobe_2D</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../api.html#task-submission">Task submission</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Tidy3d</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../api.html">API Reference</a> &raquo;</li>
+        
+      <li>tidy3dclient.viz.tprobe_2D</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/generated/tidy3dclient.viz.tprobe_2D.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="tidy3dclient-viz-tprobe-2d">
+<h1>tidy3dclient.viz.tprobe_2D<a class="headerlink" href="#tidy3dclient-viz-tprobe-2d" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt id="tidy3dclient.viz.tprobe_2D">
+<code class="sig-prename descclassname">tidy3dclient.viz.</code><code class="sig-name descname">tprobe_2D</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sim</span></em>, <em class="sig-param"><span class="n">probe_ind</span></em>, <em class="sig-param"><span class="n">time_ind</span><span class="o">=</span><span class="default_value">- 1</span></em>, <em class="sig-param"><span class="n">normal</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">normal_ind</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">field</span><span class="o">=</span><span class="default_value">'E'</span></em>, <em class="sig-param"><span class="n">val</span><span class="o">=</span><span class="default_value">'re'</span></em>, <em class="sig-param"><span class="n">comp</span><span class="o">=</span><span class="default_value">'z'</span></em>, <em class="sig-param"><span class="n">ax</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">cbar</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">clim</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">eps</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tidy3dclient.viz.tprobe_2D" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot a 2D cross-section of the field stored in a TimeProbe object at a
+given time step.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sim</strong> (<a class="reference internal" href="tidy3dclient.Simulation.html#tidy3dclient.Simulation" title="tidy3dclient.Simulation"><em>Simulation</em></a>) – A simulation object.</p></li>
+<li><p><strong>probe_ind</strong> (<em>int</em>) – Index of the time probe in <code class="docutils literal notranslate"><span class="pre">sim</span></code>.</p></li>
+<li><p><strong>time_ind</strong> (<em>int</em><em>, </em><em>optional</em>) – Index of the time step in the <code class="docutils literal notranslate"><span class="pre">TimeProbe</span></code>. Default is the last step.</p></li>
+<li><p><strong>normal</strong> (<em>None</em><em>, </em><em>optional</em>) – Axis normal to the 2D plane of plotting. If <code class="docutils literal notranslate"><span class="pre">None</span></code>, the shortest
+dimension is taken as the normal.</p></li>
+<li><p><strong>normal_ind</strong> (<em>int</em><em>, </em><em>optional</em>) – Spatial index along the normal dimension, for 3D probes.</p></li>
+<li><p><strong>field</strong> (<em>str</em>) – <code class="docutils literal notranslate"><span class="pre">'E'</span></code> or <code class="docutils literal notranslate"><span class="pre">'H'</span></code> field to plot.</p></li>
+<li><p><strong>val</strong> (<em>{'re'</em><em>, </em><em>'abs'</em><em>, </em><em>'int'}</em><em>, </em><em>optional</em>) – Plot the real part (default), or the absolute value of a field
+component, or the total field intensity.</p></li>
+<li><p><strong>comp</strong> (<em>{'x'</em><em>, </em><em>'y'</em><em>, </em><em>'z'}</em><em>, </em><em>optional</em>) – Component of the field to plot. If <code class="docutils literal notranslate"><span class="pre">val</span></code> is <code class="docutils literal notranslate"><span class="pre">'int'</span></code>, this parameter
+is irrelvant.</p></li>
+<li><p><strong>ax</strong> (<em>Matplotlib axis object</em><em>, </em><em>optional</em>) – If None, a new figure is created.</p></li>
+<li><p><strong>cbar</strong> (<em>bool</em><em>, </em><em>optional</em>) – Add a colorbar to the plot.</p></li>
+<li><p><strong>clim</strong> (<em>List</em><em>[</em><em>float</em><em>]</em><em>, </em><em>optional</em>) – Matplotlib color limit to use for plot.</p></li>
+<li><p><strong>eps</strong> (<em>bool</em><em>, </em><em>optional</em>) – If True, also plot a contour of the underlying permittivity.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Matplotlib image object</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="tidy3dclient.web.newProject.html" class="btn btn-neutral float-right" title="tidy3dclient.web.newProject" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="tidy3dclient.viz.fprobe_2D.html" class="btn btn-neutral float-left" title="tidy3dclient.viz.fprobe_2D" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright Flexcompute 2020
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

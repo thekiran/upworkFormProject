@@ -1,0 +1,366 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>tidy3dclient.Simulation &mdash; Tidy3d  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/logo.svg"/>
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="tidy3dclient.Simulation.load_results" href="tidy3dclient.Simulation.load_results.html" />
+    <link rel="prev" title="API Reference" href="../api.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Tidy3d
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">User Guide</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api.html">API Reference</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../api.html#tidy3d-api">Tidy3D API</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../api.html#simulation">Simulation</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">tidy3dclient.Simulation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tidy3dclient.Simulation.load_results.html">tidy3dclient.Simulation.load_results</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tidy3dclient.Simulation.export.html">tidy3dclient.Simulation.export</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tidy3dclient.Simulation.export_json.html">tidy3dclient.Simulation.export_json</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tidy3dclient.Simulation.import_json.html">tidy3dclient.Simulation.import_json</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../api.html#materials">Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api.html#structures">Structures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api.html#sources">Sources</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api.html#probes">Probes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api.html#plotting-tools">Plotting tools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api.html#task-submission">Task submission</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Tidy3d</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../api.html">API Reference</a> &raquo;</li>
+        
+      <li>tidy3dclient.Simulation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/generated/tidy3dclient.Simulation.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="tidy3dclient-simulation">
+<h1>tidy3dclient.Simulation<a class="headerlink" href="#tidy3dclient-simulation" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="tidy3dclient.Simulation">
+<em class="property">class </em><code class="sig-prename descclassname">tidy3dclient.</code><code class="sig-name descname">Simulation</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">size</span></em>, <em class="sig-param"><span class="n">center</span><span class="o">=</span><span class="default_value">[0.0, 0.0, 0.0]</span></em>, <em class="sig-param"><span class="n">resolution</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">mesh_step</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">structures</span><span class="o">=</span><span class="default_value">[]</span></em>, <em class="sig-param"><span class="n">sources</span><span class="o">=</span><span class="default_value">[]</span></em>, <em class="sig-param"><span class="n">probes</span><span class="o">=</span><span class="default_value">[]</span></em>, <em class="sig-param"><span class="n">symmetries</span><span class="o">=</span><span class="default_value">[0, 0, 0]</span></em>, <em class="sig-param"><span class="n">pml_layers</span><span class="o">=</span><span class="default_value">[0, 0, 0]</span></em>, <em class="sig-param"><span class="n">run_time</span><span class="o">=</span><span class="default_value">0.0</span></em>, <em class="sig-param"><span class="n">courant</span><span class="o">=</span><span class="default_value">0.9</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tidy3dclient.Simulation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Main class for building a simulation model.</p>
+<dl class="py method">
+<dt id="tidy3dclient.Simulation.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">size</span></em>, <em class="sig-param"><span class="n">center</span><span class="o">=</span><span class="default_value">[0.0, 0.0, 0.0]</span></em>, <em class="sig-param"><span class="n">resolution</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">mesh_step</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">structures</span><span class="o">=</span><span class="default_value">[]</span></em>, <em class="sig-param"><span class="n">sources</span><span class="o">=</span><span class="default_value">[]</span></em>, <em class="sig-param"><span class="n">probes</span><span class="o">=</span><span class="default_value">[]</span></em>, <em class="sig-param"><span class="n">symmetries</span><span class="o">=</span><span class="default_value">[0, 0, 0]</span></em>, <em class="sig-param"><span class="n">pml_layers</span><span class="o">=</span><span class="default_value">[0, 0, 0]</span></em>, <em class="sig-param"><span class="n">run_time</span><span class="o">=</span><span class="default_value">0.0</span></em>, <em class="sig-param"><span class="n">courant</span><span class="o">=</span><span class="default_value">0.9</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tidy3dclient.Simulation.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>center</strong> (<em>list</em><em> or </em><em>np.ndarray</em><em>, </em><em>optional</em>) – (micron) 3D vector defining the center of the simulation domain.</p></li>
+<li><p><strong>size</strong> (<em>list</em><em> or </em><em>np.ndarray</em><em>, </em><em>optional</em>) – (micron) 3D vector defining the size of the simulation domain.</p></li>
+<li><p><strong>resolution</strong> (<em>float</em><em> or </em><em>array_like of float</em><em>, </em><em>optional</em>) – (1/micron) Number of pixels per micron, or a 3D vector defining the
+number of pixels per mircon in x, y, and z seprately.</p></li>
+<li><p><strong>mesh_step</strong> (<em>float</em><em> or </em><em>array_like of float</em><em>, </em><em>optional</em>) – (micron) Step size in all directions, or a 3D vector defining the
+step size in x, y, and z seprately. If provided, <code class="docutils literal notranslate"><span class="pre">mesh_step</span></code>
+overrides the <code class="docutils literal notranslate"><span class="pre">resolution</span></code> parameter, otherwise
+<code class="docutils literal notranslate"><span class="pre">mesh_step</span> <span class="pre">=</span> <span class="pre">1/resolution</span></code>.</p></li>
+<li><p><strong>structures</strong> (<em>Structure</em><em> or </em><em>a list of Structure objects</em><em>, </em><em>optional</em>) – Empty list (default) means vacuum.</p></li>
+<li><p><strong>sources</strong> (<em>Source</em><em> or </em><em>a list of Source objects</em><em>, </em><em>optional</em>) – Source(s) to be added to the simulation.</p></li>
+<li><p><strong>probes</strong> (<em>Probe</em><em> or </em><em>a list of Probe objects</em><em>, </em><em>optional</em>) – Probe(s) to be added to the simulation.</p></li>
+<li><p><strong>symmetries</strong> (<em>list of int</em><em>, </em><em>optional</em>) – List of three elements defining reflection symmetry across a plane
+bisecting the simulation domain normal to the x-, y-, and z-axis,
+respectively. Each element can be <code class="docutils literal notranslate"><span class="pre">0</span></code> (no symmetry), <code class="docutils literal notranslate"><span class="pre">1</span></code>
+(even, i.e. ‘PMC’ symmetry) or <code class="docutils literal notranslate"><span class="pre">-1</span></code> (odd, i.e. ‘PEC’ symmetry).
+Note that the vectorial nature of the fields must be taken into
+account to correctly determine the symmetry value.</p></li>
+<li><p><strong>pml_layers</strong> (<em>list of int</em><em>, </em><em>optional</em>) – List of three elements defining the number of PML layers on both
+sides of the simulation domain along x, y, and z. When set to <code class="docutils literal notranslate"><span class="pre">0</span></code>
+(default), periodic boundary conditions are applied.</p></li>
+<li><p><strong>run_time</strong> (<em>float</em><em>, </em><em>optional</em>) – (second) Total electromagnetic evolution time.</p></li>
+<li><p><strong>courant</strong> (<em>float</em><em>, </em><em>optional</em>) – Courant stability factor, must be smaller than 1.</p></li>
+<li><p><strong>verbose</strong> (<em>bool</em><em>, </em><em>optional</em>) – Print helpful messages regarding the simulation.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<p class="rubric">Methods</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tidy3dclient.Simulation.__init__" title="tidy3dclient.Simulation.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(size[, center, resolution, …])</p></td>
+<td><p><dl class="field-list simple">
+<dt class="field-odd">param center</dt>
+<dd class="field-odd"><p>(micron) 3D vector defining the center of the simulation domain.</p>
+</dd>
+</dl>
+</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">add</span></code>(objects)</p></td>
+<td><p>Add a list of objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="tidy3dclient.Simulation.export.html#tidy3dclient.Simulation.export" title="tidy3dclient.Simulation.export"><code class="xref py py-obj docutils literal notranslate"><span class="pre">export</span></code></a>()</p></td>
+<td><p>Return a dictionary with all simulation parameters and objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="tidy3dclient.Simulation.export_json.html#tidy3dclient.Simulation.export_json" title="tidy3dclient.Simulation.export_json"><code class="xref py py-obj docutils literal notranslate"><span class="pre">export_json</span></code></a>(fjson)</p></td>
+<td><p>Export the simulation to a JSON file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="tidy3dclient.Simulation.import_json.html#tidy3dclient.Simulation.import_json" title="tidy3dclient.Simulation.import_json"><code class="xref py py-obj docutils literal notranslate"><span class="pre">import_json</span></code></a>(fjson)</p></td>
+<td><p>Import a simulation from a JSON file.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="tidy3dclient.Simulation.load_results.html#tidy3dclient.Simulation.load_results" title="tidy3dclient.Simulation.load_results"><code class="xref py py-obj docutils literal notranslate"><span class="pre">load_results</span></code></a>(dfile)</p></td>
+<td><p>Load the probe data recorded from a Tidy3D run.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Attributes</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">fprobes</span></code></p></td>
+<td><p>List conaining all FreqProbe objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">mat_inds</span></code></p></td>
+<td><p>List conaining the material index in <code class="docutils literal notranslate"><span class="pre">materials</span></code> of every <code class="docutils literal notranslate"><span class="pre">structure</span></code>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">materials</span></code></p></td>
+<td><p>List conaining all materials included in the simulation.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sources</span></code></p></td>
+<td><p>List conaining all Source objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">structures</span></code></p></td>
+<td><p>List conaining all Structure objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tprobes</span></code></p></td>
+<td><p>List conaining all TimeProbe objects.</p></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="tidy3dclient.Simulation.load_results.html" class="btn btn-neutral float-right" title="tidy3dclient.Simulation.load_results" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../api.html" class="btn btn-neutral float-left" title="API Reference" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright Flexcompute 2020
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

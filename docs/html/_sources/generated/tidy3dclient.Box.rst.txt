@@ -1,0 +1,22 @@
+﻿tidy3dclient.Box
+================
+
+.. currentmodule:: tidy3dclient
+
+.. autoclass:: Box
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~Box.__init__
+   
+   
+
+   
+   
+   

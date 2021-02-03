@@ -1,6 +1,0 @@
-﻿tidy3dclient.Simulation.import\_json
-====================================
-
-.. currentmodule:: tidy3dclient
-
-.. automethod:: Simulation.import_json

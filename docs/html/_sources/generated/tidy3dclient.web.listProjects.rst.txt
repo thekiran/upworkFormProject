@@ -1,6 +1,0 @@
-﻿tidy3dclient.web.listProjects
-=============================
-
-.. currentmodule:: tidy3dclient.web
-
-.. autofunction:: listProjects

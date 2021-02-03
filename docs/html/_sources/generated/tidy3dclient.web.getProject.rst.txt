@@ -1,6 +1,0 @@
-﻿tidy3dclient.web.getProject
-===========================
-
-.. currentmodule:: tidy3dclient.web
-
-.. autofunction:: getProject

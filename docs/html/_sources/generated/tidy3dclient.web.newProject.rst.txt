@@ -1,6 +1,0 @@
-﻿tidy3dclient.web.newProject
-===========================
-
-.. currentmodule:: tidy3dclient.web
-
-.. autofunction:: newProject

@@ -1,6 +1,0 @@
-﻿tidy3dclient.Simulation.export
-==============================
-
-.. currentmodule:: tidy3dclient
-
-.. automethod:: Simulation.export

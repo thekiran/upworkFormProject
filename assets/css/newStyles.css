@@ -9,6 +9,7 @@ main img.main-illustration{
     -ms-transform: translatey(0px);
     transform: translatey(0px); 
     z-index: 0;
+    /* box-shadow: 0 0 10px; */
 }
 
 main img.shadow-illustration{
@@ -98,6 +99,25 @@ main img.shadow-illustration{
 
 }
 .form-login #password{
+    display: block;
+    height: 35px;
+    width: 100%; 
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    /* margin: 0 auto; */
+    border-color: rgba(0, 0, 0, 0.308);
+
+}
+.cp-label{
+    display: block;
+    text-align: left !important;
+    /* background: rgb(5, 228, 72); */
+    padding: 10px 0 5px 0;
+    font-size: 0.9em;
+
+}
+#c-password{
     display: block;
     height: 35px;
     width: 100%; 

@@ -25,6 +25,11 @@
         margin-left: 0vh; 
         max-width: 500px;
         width: 100%; 
+    } 
+    .btn.btn-blue{
+        display: block;
+        margin: 20px auto 0 auto;
+
     }
 }
 
@@ -44,5 +49,6 @@
     .submit a{
         display: block;
     }
+   
 }
 

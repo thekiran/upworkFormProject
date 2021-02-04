@@ -265,9 +265,34 @@ main img.shadow-illustration{
     width: 180px;
     margin: 0 10px;
 }
-.signup-content .btn.btn-blue{
+.btn.btn-blue{
     /* margin: 15px auto; */
     background: rgb(0, 119, 255);
     color: #fff;
     /* padding: 10px 0 13px 0; */
+}
+
+/* SIGNupLogo */
+.logo-signup{
+    height: 70px;
+    margin-bottom: 1.5em;
+}
+
+/* SINGUP VERIFY */
+.btn.btn-blue-block{
+    background: rgb(0, 119, 255);
+    color: #fff;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.text-help{
+    font-size: 0.8em;
+}
+
+.grey-text{
+    font-size: .7em;
+    color: rgba(0, 0, 0, 0.3);
+    display: block;
+    margin:  30px 0;
 }

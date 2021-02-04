@@ -145,45 +145,14 @@
           </div> 
         </div> 
       </div>
-      <!-- <img
+      <img
         class="main-illustration"
         src="./assets/img/em/elec.svg"
         alt=""
-      /> -->
-      <!-- <img
-        class="shadow-illustration"
-        src="./assets/img/em/shadow.svg"
-        alt=""
-      /> -->
+      /> 
     </main>
     
-    
-    <!-- <a href="#" class="upward-arrow"
-      ><img src="assets/img/upward-arrow.png"
-    /></a> -->
-    <!-- <footer class="mt-0">
-      <div class="container-fluid px-3 px-lg-5 py-3">
-        <div class="row">
-          <div
-            class="col-12 col-lg-5 d-flex justify-content-between align-items-center flex-column flex-lg-row"
-          >
-            <img src="assets/img/white-logo.png" />
-            <div class="footer-menu py-3 py-lg-0">
-              <a href="term_of_service.html" class="mr-5"
-                >Terms & Legal Notices</a
-              >
-              <a href="mailto:support@flexcompute.com">Contact Support</a>
-            </div>
-          </div>
-          <div
-            class="col-12 col-lg-7 d-flex justify-content-center justify-content-lg-end align-items-center copyright-text"
-          >
-            © 2020 Flexcompute Inc. All Rights Reserved.
-          </div>
-        </div>
-      </div>
-    </footer> -->
-
+     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -197,24 +166,7 @@
     ></script>
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script src="assets/js/main.js?v=115"></script>
-    <script>
-      function settopHeight(targetSize) {
-        window.wistiaDisableMux = true;
-        var topInnerHeight = $(".section-header").first().outerHeight();
-        var bg_video = Wistia.api("bg_video");
-        if (targetSize > topInnerHeight) {
-          $(".section-header").css("max-height", targetSize + "px");
-          bg_video.height(targetSize, {
-            constrain: true,
-          });
-        } else {
-          bg_video.height(topInnerHeight, {
-            constrain: true,
-          });
-        }
-      }
-
-    </script>
+    
      
   </body>
 </html>
